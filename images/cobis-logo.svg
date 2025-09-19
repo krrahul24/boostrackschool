@@ -1,0 +1,27 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cobisGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="100" fill="url(#cobisGrad)" rx="8"/>
+  
+  <!-- British Flag Elements -->
+  <g transform="translate(15, 25)">
+    <rect x="5" y="5" width="30" height="20" fill="#ffffff" opacity="0.9"/>
+    <line x1="5" y1="5" x2="35" y2="25" stroke="#dc2626" stroke-width="2"/>
+    <line x1="35" y1="5" x2="5" y2="25" stroke="#dc2626" stroke-width="2"/>
+    <line x1="20" y1="5" x2="20" y2="25" stroke="#dc2626" stroke-width="2"/>
+    <line x1="5" y1="15" x2="35" y2="15" stroke="#dc2626" stroke-width="2"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="60" y="25" font-family="serif" font-size="14" font-weight="bold" fill="#ffffff">COBIS</text>
+  <text x="60" y="42" font-family="sans-serif" font-size="8" fill="#ffffff">COUNCIL OF BRITISH</text>
+  <text x="60" y="55" font-family="sans-serif" font-size="8" fill="#ffffff">INTERNATIONAL</text>
+  <text x="60" y="68" font-family="sans-serif" font-size="8" fill="#ffffff">SCHOOLS</text>
+  <text x="60" y="82" font-family="sans-serif" font-size="7" fill="#e5e7eb">Member</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ibGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="100" fill="url(#ibGrad)" rx="8"/>
+  
+  <!-- Globe -->
+  <g transform="translate(20, 25)">
+    <circle cx="25" cy="25" r="20" fill="#ffffff" opacity="0.9"/>
+    <path d="M10 25 Q25 10 40 25 Q25 40 10 25" fill="#10b981"/>
+    <path d="M25 5 L25 45 M5 25 L45 25" stroke="#10b981" stroke-width="1"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="75" y="30" font-family="serif" font-size="16" font-weight="bold" fill="#ffffff">IB</text>
+  <text x="75" y="50" font-family="sans-serif" font-size="10" fill="#ffffff">INTERNATIONAL</text>
+  <text x="75" y="65" font-family="sans-serif" font-size="10" fill="#ffffff">BACCALAUREATE</text>
+  <text x="75" y="80" font-family="sans-serif" font-size="8" fill="#e5e7eb">World School</text>
+</svg>

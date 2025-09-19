@@ -1,0 +1,22 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cambridgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="100" fill="url(#cambridgeGrad)" rx="8"/>
+  
+  <!-- Shield -->
+  <g transform="translate(20, 20)">
+    <path d="M15 5 L25 5 L30 15 L30 45 L20 55 L10 45 L10 15 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M15 10 L25 10 L25 40 L20 45 L15 40 Z" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="60" y="35" font-family="serif" font-size="14" font-weight="bold" fill="#ffffff">CAMBRIDGE</text>
+  <text x="60" y="55" font-family="sans-serif" font-size="10" fill="#ffffff">INTERNATIONAL</text>
+  <text x="60" y="70" font-family="sans-serif" font-size="8" fill="#e5e7eb">Authorized School</text>
+</svg>

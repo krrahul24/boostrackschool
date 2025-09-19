@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BoosTrack School</title>
+    <meta name="description" content="Get in touch with BoosTrack School. Find our location, contact information, and send us a message.">
+    <meta name="keywords" content="BoosTrack School, Contact, Address, Phone, Email, Admissions, Support">
+    <meta name="author" content="BoosTrack School">
+
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../images/boostrack.png" alt="SKG International School" class="logo">
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li><a href="/about/index.html" class="nav-link">About us</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#campus" class="nav-link">Campus <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                              <li><a href="/admissions/index.html">Admissions</a></li>
+                            <li><a href="/contact/index.html">Contact Us</a></li>
+                           
+
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="/book-visit/index.html" class="btn btn-primary">Book a Visit</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-bg" style="background-image: url('../images/contact-hero.jpg')"></div>
+            <div class="page-header-content">
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-current">Contact</span>
+                    </nav>
+                    <h1 class="page-title">Get in Touch</h1>
+                    <p class="page-subtitle">We're here to help and answer any questions you might have</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>123 Education Street<br>Knowledge City, KC 12345<br>United States</p>
+                        <a href="https://maps.google.com" target="_blank" class="contact-link">Get Directions</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>Main Office: <a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                        Admissions: <a href="tel:+15551234568">+1 (555) 123-4568</a><br>
+                        Emergency: <a href="tel:+15551234569">+1 (555) 123-4569</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>General: <a href="mailto:info@skginternational.edu">info@skginternational.edu</a><br>
+                        Admissions: <a href="mailto:admissions@skginternational.edu">admissions@skginternational.edu</a><br>
+                        Careers: <a href="mailto:careers@skginternational.edu">careers@skginternational.edu</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 9:00 AM - 2:00 PM<br>
+                        Sunday: Closed<br>
+                        <small>School hours may vary</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <div class="section-header">
+                            <h2 class="section-title">Send Us a Message</h2>
+                            <p class="section-subtitle">We'll get back to you within 24 hours</p>
+                        </div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required data-label="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required data-label="Last Name">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required data-label="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" data-label="Phone Number">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required data-label="Subject">
+                                    <option value="">Select a subject</option>
+                                    <option value="admissions">Admissions Inquiry</option>
+                                    <option value="general">General Information</option>
+                                    <option value="academics">Academic Programs</option>
+                                    <option value="facilities">Campus & Facilities</option>
+                                    <option value="events">Events & Activities</option>
+                                    <option value="careers">Career Opportunities</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required data-label="Message" placeholder="Please provide details about your inquiry..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    I would like to receive updates and newsletters from SKG International School
+                                </label>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                                <p class="form-note">* Required fields. We respect your privacy and will never share your information.</p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-sidebar">
+                        <div class="sidebar-card">
+                            <h3>Quick Links</h3>
+                            <ul class="quick-links">
+                                <li><a href="book-visit.html"><i class="fas fa-calendar-alt"></i> Schedule a Campus Visit</a></li>
+                                <li><a href="admissions.html"><i class="fas fa-file-alt"></i> Apply for Admission</a></li>
+                                <li><a href="../index.html#faq"><i class="fas fa-question-circle"></i> Frequently Asked Questions</a></li>
+                                <li><a href="news-events.html"><i class="fas fa-newspaper"></i> Latest News & Events</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Follow Us</h3>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="#" class="social-link twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-link instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-link linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-link youtube">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>YouTube</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Emergency Contact</h3>
+                            <p>For urgent matters outside office hours:</p>
+                            <a href="tel:+15551234569" class="emergency-contact">
+                                <i class="fas fa-phone"></i>
+                                +1 (555) 123-4569
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Find Us</h2>
+                    <p class="section-subtitle">Located in the heart of Knowledge City</p>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.0059413!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjEuNCJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="SKG International School Location">
+                        </iframe>
+                    </div>
+                    
+                    <div class="map-info">
+                        <div class="map-details">
+                            <h3>Campus Location</h3>
+                            <p>Our beautiful 25-acre campus is conveniently located in Knowledge City, easily accessible by public transportation and major highways.</p>
+                            
+                            <div class="transport-info">
+                                <div class="transport-item">
+                                    <i class="fas fa-car"></i>
+                                    <div>
+                                        <h4>By Car</h4>
+                                        <p>Free parking available on campus. Take Exit 15 from Highway 101.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="transport-item">
+                                    <i class="fas fa-bus"></i>
+                                    <div>
+                                        <h4>Public Transport</h4>
+                                        <p>Bus routes 42, 67, and 89 stop directly at our main entrance.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="transport-item">
+                                    <i class="fas fa-train"></i>
+                                    <div>
+                                        <h4>Metro</h4>
+                                        <p>Knowledge City Metro Station is a 10-minute walk from campus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Department Contacts -->
+        <section class="department-contacts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Department Contacts</h2>
+                    <p class="section-subtitle">Connect directly with the right department</p>
+                </div>
+                
+                <div class="departments-grid">
+                    <div class="department-card">
+                        <div class="dept-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Admissions Office</h3>
+                        <p>Information about enrollment, applications, and school visits</p>
+                       <div class="dept-contact">
+                            <p><i class="fas fa-phone"></i> +91 9294978530</p>
+                            <p><i class="fas fa-envelope"></i> finance@boostrack.edu</p>
+                        </div>
+                        <a href="admissions.html" class="btn btn-outline btn-small">Learn More</a>
+                    </div>
+                    
+                    <div class="department-card">
+                        <div class="dept-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Academic Office</h3>
+                        <p>Curriculum information, academic support, and student progress</p>
+                        <div class="dept-contact">
+                            <p><i class="fas fa-phone"></i> +91 9294978530</p>
+                            <p><i class="fas fa-envelope"></i> finance@boostrack.edu</p>
+                        </div>
+                        <a href="cambridge.html" class="btn btn-outline btn-small">View Programs</a>
+                    </div>
+                    
+                    <div class="department-card">
+                        <div class="dept-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Student Services</h3>
+                        <p>Student welfare, counseling, and extracurricular activities</p>
+                        <div class="dept-contact">
+                            <p><i class="fas fa-phone"></i> +91 9294978530</p>
+                            <p><i class="fas fa-envelope"></i> finance@boostrack.edu</p>
+                        </div>
+                        <a href="learning-journey.html" class="btn btn-outline btn-small">Student Life</a>
+                    </div>
+                    
+                    <div class="department-card">
+                        <div class="dept-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Finance Office</h3>
+                        <p>Fee payments, financial aid, and scholarship information</p>
+                        <div class="dept-contact">
+                            <p><i class="fas fa-phone"></i> +91 9294978530</p>
+                            <p><i class="fas fa-envelope"></i> finance@boostrack.edu</p>
+                        </div>
+                        <a href="admissions.html#fees" class="btn btn-outline btn-small">Fee Structure</a>
+                    </div>
+                    
+                    <div class="department-card">
+                        <div class="dept-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Human Resources</h3>
+                        <p>Career opportunities, staff inquiries, and employment</p>
+                        <div class="dept-contact">
+                            <p><i class="fas fa-phone"></i> +91 9294978530</p>
+                            <p><i class="fas fa-envelope"></i> finance@boostrack.edu</p>
+                        </div>
+                        <a href="careers.html" class="btn btn-outline btn-small">Join Our Team</a>
+                    </div>
+                    
+                    <div class="department-card">
+                        <div class="dept-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>IT Support</h3>
+                        <p>Technical support, online learning platforms, and digital resources</p>
+                         <div class="dept-contact">
+                            <p><i class="fas fa-phone"></i> +91 9294978530</p>
+                            <p><i class="fas fa-envelope"></i> finance@boostrack.edu</p>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-small">Tech Help</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                       
+                        <h3>BoosTrack School</h3>
+                    </div>
+                    <p>Nurturing curious minds, building confident leaders, creating compassionate global citizens.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about/index.html">About Us</a></li>
+                        <li><a href="/admissions/index.html">Admissions</a></li>
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="#">Campus</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#">Early Years</a></li>
+                        <li><a href="#">Primary School</a></li>
+                        <li><a href="#">Middle Years</a></li>
+                        <li><a href="#">IGCSE</a></li>
+                        <li><a href="#">A-Levels</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Education Street<br>Knowledge City, KC 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9294978530</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@boostrack.edu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                     <p>&copy; 2025 BoosTrack School. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

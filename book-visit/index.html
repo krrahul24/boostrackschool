@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Visit - BoosTrack School</title>
+    <meta name="description" content="Schedule a campus visit at BoosTrack School. Experience our facilities, meet our faculty, and discover why we're the right choice for your child.">
+    <meta name="keywords" content="BoosTrack School, Book a Visit, Campus Tour, Admissions, International School, Cambridge, IB">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../images/boostrack.png" alt="SKG International School" class="logo">
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li><a href="/about/index.html" class="nav-link">About us</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#campus" class="nav-link">Campus <i class="fas fa-chevron-down"></i></a>
+                         <ul class="dropdown-menu">
+                              <li><a href="/admissions/index.html">Admissions</a></li>
+                            <li><a href="/contact/index.html">Contact Us</a></li>
+                           
+
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="/book-visit/index.html" class="btn btn-primary">Book a Visit</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-bg" style="background-image: url('../images/campus-tour.jpg')"></div>
+            <div class="page-header-content">
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-current">Book a Visit</span>
+                    </nav>
+                    <h1 class="page-title">Schedule Your Campus Visit</h1>
+                    <p class="page-subtitle">Experience our world-class facilities and vibrant learning community</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Options -->
+        <section class="visit-options">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Choose Your Visit Experience</h2>
+                    <p class="section-subtitle">Select the type of visit that best suits your needs</p>
+                </div>
+                
+                <div class="visit-types-grid">
+                    <div class="visit-type-card">
+                        <div class="visit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Group Tour</h3>
+                        <p>Join other families for a comprehensive campus tour with our admissions team</p>
+                        <ul class="visit-features">
+                            <li>90-minute guided tour</li>
+                            <li>Visit classrooms and facilities</li>
+                            <li>Meet with faculty members</li>
+                            <li>Q&A session</li>
+                            <li>Refreshments included</li>
+                        </ul>
+                        <div class="visit-schedule">
+                            <strong>Available:</strong> Saturdays 10:00 AM & 2:00 PM
+                        </div>
+                    </div>
+                    
+                    <div class="visit-type-card featured">
+                        <div class="visit-badge">Most Popular</div>
+                        <div class="visit-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Private Tour</h3>
+                        <p>Personalized one-on-one tour tailored to your family's specific interests</p>
+                        <ul class="visit-features">
+                            <li>2-hour personalized tour</li>
+                            <li>Meet with department heads</li>
+                            <li>Classroom observations</li>
+                            <li>Individual consultation</li>
+                            <li>Customized itinerary</li>
+                        </ul>
+                        <div class="visit-schedule">
+                            <strong>Available:</strong> Monday-Friday by appointment
+                        </div>
+                    </div>
+                    
+                    <div class="visit-type-card">
+                        <div class="visit-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Student Shadow Day</h3>
+                        <p>Your child spends a full day with one of our current students</p>
+                        <ul class="visit-features">
+                            <li>Full school day experience</li>
+                            <li>Attend actual classes</li>
+                            <li>Lunch with students</li>
+                            <li>Participate in activities</li>
+                            <li>Student buddy assigned</li>
+                        </ul>
+                        <div class="visit-schedule">
+                            <strong>Available:</strong> Tuesday-Thursday (advance booking required)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form -->
+        <section class="booking-form-section">
+            <div class="container">
+                <div class="booking-content">
+                    <div class="booking-form-container">
+                        <div class="section-header">
+                            <h2 class="section-title">Book Your Visit</h2>
+                            <p class="section-subtitle">Fill out the form below and we'll confirm your visit within 24 hours</p>
+                        </div>
+                        
+                        <form class="booking-form" id="bookingForm">
+                            <div class="form-section">
+                                <h3>Visit Details</h3>
+                                <div class="form-group">
+                                    <label for="visitType">Type of Visit *</label>
+                                    <select id="visitType" name="visitType" required data-label="Visit Type">
+                                        <option value="">Select visit type</option>
+                                        <option value="group">Group Tour</option>
+                                        <option value="private">Private Tour</option>
+                                        <option value="shadow">Student Shadow Day</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="preferredDate">Preferred Date *</label>
+                                        <input type="date" id="preferredDate" name="preferredDate" required data-label="Preferred Date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="preferredTime">Preferred Time *</label>
+                                        <select id="preferredTime" name="preferredTime" required data-label="Preferred Time">
+                                            <option value="">Select time</option>
+                                            <option value="9:00">9:00 AM</option>
+                                            <option value="10:00">10:00 AM</option>
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="14:00">2:00 PM</option>
+                                            <option value="15:00">3:00 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="numberOfVisitors">Number of Visitors *</label>
+                                    <select id="numberOfVisitors" name="numberOfVisitors" required data-label="Number of Visitors">
+                                        <option value="">Select number</option>
+                                        <option value="1">1 person</option>
+                                        <option value="2">2 people</option>
+                                        <option value="3">3 people</option>
+                                        <option value="4">4 people</option>
+                                        <option value="5+">5+ people</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h3>Contact Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="parentName">Parent/Guardian Name *</label>
+                                        <input type="text" id="parentName" name="parentName" required data-label="Parent/Guardian Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" required data-label="Email Address">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" required data-label="Phone Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="relationship">Relationship to Student</label>
+                                        <select id="relationship" name="relationship" data-label="Relationship">
+                                            <option value="">Select relationship</option>
+                                            <option value="parent">Parent</option>
+                                            <option value="guardian">Guardian</option>
+                                            <option value="grandparent">Grandparent</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h3>Student Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="studentName">Student Name</label>
+                                        <input type="text" id="studentName" name="studentName" data-label="Student Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="studentAge">Student Age</label>
+                                        <input type="number" id="studentAge" name="studentAge" min="2" max="18" data-label="Student Age">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="gradeInterest">Grade Level of Interest</label>
+                                    <select id="gradeInterest" name="gradeInterest" data-label="Grade Level">
+                                        <option value="">Select grade level</option>
+                                        <option value="toddler">Toddler (1.5-3 years)</option>
+                                        <option value="early-years">Early Years (3-5 years)</option>
+                                        <option value="grade-1">Grade 1</option>
+                                        <option value="grade-2">Grade 2</option>
+                                        <option value="grade-3">Grade 3</option>
+                                        <option value="grade-4">Grade 4</option>
+                                        <option value="grade-5">Grade 5</option>
+                                        <option value="grade-6">Grade 6</option>
+                                        <option value="grade-7">Grade 7</option>
+                                        <option value="grade-8">Grade 8</option>
+                                        <option value="grade-9">Grade 9</option>
+                                        <option value="grade-10">Grade 10 (IGCSE)</option>
+                                        <option value="grade-11">Grade 11 (A-Level/IB)</option>
+                                        <option value="grade-12">Grade 12 (A-Level/IB)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="currentSchool">Current School (if applicable)</label>
+                                    <input type="text" id="currentSchool" name="currentSchool" data-label="Current School">
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h3>Additional Information</h3>
+                                <div class="form-group">
+                                    <label for="specificInterests">Specific Areas of Interest</label>
+                                    <textarea id="specificInterests" name="specificInterests" rows="3" placeholder="e.g., STEM programs, arts, sports, special needs support..." data-label="Specific Interests"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="questions">Questions or Special Requests</label>
+                                    <textarea id="questions" name="questions" rows="3" placeholder="Any specific questions or requests for your visit..." data-label="Questions"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="hearAbout">How did you hear about us?</label>
+                                    <select id="hearAbout" name="hearAbout" data-label="How did you hear about us">
+                                        <option value="">Select option</option>
+                                        <option value="website">School website</option>
+                                        <option value="referral">Friend/Family referral</option>
+                                        <option value="social-media">Social media</option>
+                                        <option value="advertisement">Advertisement</option>
+                                        <option value="education-fair">Education fair</option>
+                                        <option value="search-engine">Search engine</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="terms" name="terms" required>
+                                        <span class="checkmark"></span>
+                                        I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> *
+                                    </label>
+                                </div>
+                                
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <span class="checkmark"></span>
+                                        I would like to receive updates and newsletters from SKG International School
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary btn-large">Schedule My Visit</button>
+                                <p class="form-note">* Required fields. We will contact you within 24 hours to confirm your visit.</p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="booking-sidebar">
+                        <div class="sidebar-card">
+                            <h3>What to Expect</h3>
+                            <ul class="expectation-list">
+                                <li><i class="fas fa-check"></i> Campus tour with admissions counselor</li>
+                                <li><i class="fas fa-check"></i> Visit to age-appropriate classrooms</li>
+                                <li><i class="fas fa-check"></i> Meet with faculty and staff</li>
+                                <li><i class="fas fa-check"></i> Information about programs and curriculum</li>
+                                <li><i class="fas fa-check"></i> Q&A session about admissions</li>
+                                <li><i class="fas fa-check"></i> Take-home information packet</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Visit Guidelines</h3>
+                            <div class="guidelines">
+                                <div class="guideline-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div>
+                                        <h4>Duration</h4>
+                                        <p>Tours typically last 90 minutes to 2 hours</p>
+                                    </div>
+                                </div>
+                                <div class="guideline-item">
+                                    <i class="fas fa-users"></i>
+                                    <div>
+                                        <h4>Group Size</h4>
+                                        <p>Maximum 6 people per private tour</p>
+                                    </div>
+                                </div>
+                                <div class="guideline-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <h4>Booking</h4>
+                                        <p>Please book at least 48 hours in advance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Need Help?</h3>
+                            <p>Have questions about scheduling your visit?</p>
+                            <div class="help-contacts">
+                                <a href="tel:+15551234568" class="help-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+1 (555) 123-4568</span>
+                                </a>
+                                <a href="mailto:admissions@skginternational.edu" class="help-contact">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>admissions@skginternational.edu</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                       
+                        <h3>BoosTrack School</h3>
+                    </div>
+                    <p>Nurturing curious minds, building confident leaders, creating compassionate global citizens.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                   <ul>
+                        <li><a href="/about/index.html">About Us</a></li>
+                        <li><a href="/admissions/index.html">Admissions</a></li>
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="#">Campus</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#">Early Years</a></li>
+                        <li><a href="#">Primary School</a></li>
+                        <li><a href="#">Middle Years</a></li>
+                        <li><a href="#">IGCSE</a></li>
+                        <li><a href="#">A-Levels</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Education Street<br>Knowledge City, KC 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9294978530</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@boostrack.edu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                  <p>&copy; 2025 BoosTrack School. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
